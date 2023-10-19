@@ -4,7 +4,7 @@ var sp, btnstart, btnstop, t, mn, s, h, ms;
 
 // fonction pour initialiser les variables
 
-windows.onload = function(){
+window.onload = function(){
     sp = document.getElementsByTagName('span'); 
     btnstart = document.getElementById('start'); 
     btnstop = document.getElementById('stop'); 
@@ -13,6 +13,7 @@ windows.onload = function(){
 }
 
 //le compteur 
+
 
 function update_chrono(){
    ms+=1;
@@ -46,7 +47,7 @@ sp[3].innerHTML = ms + "ms";
 
 function start(){
     //cette ligne de code execute la function update_chrono()
-    t = setInterval(update_chrono(), 100); 
+    t = setInterval(update_chrono, 100); 
     btnstart.disabled = true
 }
 
