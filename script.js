@@ -50,4 +50,3 @@ function start(){
     t = setInterval(update_chrono, 100); 
     btnstart.disabled = true
 }
-
