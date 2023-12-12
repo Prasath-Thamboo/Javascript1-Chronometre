@@ -50,3 +50,8 @@ function start(){
     t = setInterval(update_chrono, 100); 
     btnstart.disabled = true
 }
+function stop(){
+    //cette ligne de code execute la function update_chrono()
+   clearInterval(t); 
+   btn_start.disabled = false
+}
